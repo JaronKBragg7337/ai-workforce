@@ -1,0 +1,23 @@
+# .gitignore — what Git should NOT save into this repository.
+# This repo holds documentation (Markdown) and, later, a simple static
+# website (HTML/CSS/JSON) written by the workers. There is no code to
+# compile, no build process, and no API keys kept here. So this list is
+# intentionally small: it mainly keeps out operating-system junk and
+# anything that should never be made public, like secrets.
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Editor / temporary files
+*.swp
+*~
+
+# Secrets — never commit credentials, even though this system is
+# designed not to use them. This is a safety backstop.
+.env
+*.key
+*.pem
+
+# Local logs
+*.log
